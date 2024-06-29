@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Auth\LogoutController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,3 +38,6 @@ Route::get('/signup', function () {
 
 //signup post
 Route::post('/signup', [AuthController::class, 'signup'])->name('signup.post');
+
+//logout route
+Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
