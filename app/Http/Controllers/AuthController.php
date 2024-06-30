@@ -23,11 +23,11 @@ class AuthController extends Controller
 
         // Attempt to log the user in
         if (Auth::attempt($credentials)) {
-            // Authentication passed, redirect to intended route or dashboard
+            // Authentication passed
             return redirect()->intended('home'); 
         }
 
-        // Authentication failed, redirect back with an error message
+        // Authentication failed, no redirect and error message
         return back()->withErrors([
             'email' => 'Email ou mdp non valide !',
         ]);

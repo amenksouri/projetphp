@@ -14,10 +14,27 @@
         
     </nav>
 </div>
+<script src="https://kit.fontawesome.com/89f07b30b9.js" crossorigin="anonymous"></script>
+<script>
 
+    document.getElementById('sidebar').addEventListener('mouseover', () => {
+        document.querySelectorAll('.nav-link>i').forEach(item => {
+            item.style.display = "block";
+        });
+    });
+    
+    document.getElementById('sidebar').addEventListener('mouseout', () => {
+        document.querySelectorAll('.nav-link>i').forEach(item => {
+            item.style.display = "none";
+        });
+    });
+</script>
 <style>
     .out{
         color:red;
+    }
+    .nav-link>i{
+        display:none ;
     }
     .sidebar {
         position: fixed;
