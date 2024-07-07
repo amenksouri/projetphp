@@ -1,8 +1,8 @@
 <div class="sidebar" id="sidebar">
-    <div class="sidebar-heading">Menu ^</div>
+    <div class="sidebar-heading">Menu <i class="fa-solid fa-caret-up"></i></div>
     <nav class="nav flex-column">
         <a class="nav-link active" href="#"><i class="fas fa-tachometer-alt"></i> <span class="nav-text">   Home</span></a>
-        <a class="nav-link" href="#"><i class="fas fa-user"></i> <span class="nav-text">   Profile</span></a>
+        <a class="nav-link" href="/profile"><i class="fas fa-user"></i> <span class="nav-text">   Profile</span></a>
         <a class="nav-link" href="#"><i class="fas fa-cog"></i> <span class="nav-text">   Settings</span></a>
         <!-- Logout Link -->
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

@@ -13,9 +13,23 @@
                     <div class="card-body">
                         <form method="POST" action="{{ route('signup.post') }}">
                             @csrf
+                            @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <h5>Validation Error</h5>
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
                             <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
+                                <label for="f_name">First Name</label>
+                                <input type="text" class="form-control" id="f_name" name="f_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="l_name">Last Name</label>
+                                <input type="text" class="form-control" id="l_name" name="l_name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email Address</label>
