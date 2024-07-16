@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\FreelanceJobController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,3 +43,11 @@ Route::post('/signup', [AuthController::class, 'signup'])->name('signup.post');
 
 //logout route
 Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
+
+// Route to show the form for adding a freelance job
+Route::get('/jobs/create', function () {
+    return view('add_freelance');
+})->name('add_freelance');
+
+// Route to store the newly created freelance job in the database
+Route::post('/jobs', [FreelanceJobController::class, 'store'])->name('add_freelance');

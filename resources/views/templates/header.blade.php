@@ -37,7 +37,7 @@
                         <a href="javascript:void(0)" style="color: #007bff; text-decoration: none;" class="dropbtn">Services</a>
                         <div class="dropdown-content">
                             <a href="#">Postuler</a>
-                            <a href="#">Proposer    </a>
+                            <a href="/ProjetPhp/public/jobs/create">Proposer    </a>
                             
                         </div>
                     
