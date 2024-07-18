@@ -13,5 +13,6 @@ class FreelanceJob extends Model
     protected $fillable = [
         'title',
         'description',
+        'status',
     ];
 }

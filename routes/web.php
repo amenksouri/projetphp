@@ -51,3 +51,9 @@ Route::get('/jobs/create', function () {
 
 // Route to store the newly created freelance job in the database
 Route::post('/jobs', [FreelanceJobController::class, 'store'])->name('add_freelance');
+
+
+Route::get('/jobs', [FreelanceJobController::class, 'index'])->name('list_freelance');
+
+Route::delete('/jobs/{id}', [FreelanceJobController::class, 'destroy'])->name('jobs.destroy');
+Route::post('/jobs/{id}/apply', [FreelanceJobController::class, 'apply'])->name('jobs.apply');

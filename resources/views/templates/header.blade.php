@@ -29,14 +29,14 @@
         <h1 style="margin: 0; color: #6c757d;"><i class="fa fa-thumb-tack" aria-hidden="true"></i>        Mesmar Fi Hit</h1>
         <nav>
             <ul style="list-style: none; padding: 0; margin: 0; display: flex;">
-                <li style="margin-right: 20px;"><a href="#" style="color: #007bff; text-decoration: none;">Home</a></li>
+                <li style="margin-right: 20px;"><a href="/ProjetPhp/public/home" style="color: #007bff; text-decoration: none;">Home</a></li>
                 <li style="margin-right: 20px;"><a href="#" style="color: #007bff; text-decoration: none;">About</a></li>
                     <li class="dropdown" style="margin-right: 20px;">
                     
                     
                         <a href="javascript:void(0)" style="color: #007bff; text-decoration: none;" class="dropbtn">Services</a>
                         <div class="dropdown-content">
-                            <a href="#">Postuler</a>
+                            <a href="/ProjetPhp/public/jobs">Postuler</a>
                             <a href="/ProjetPhp/public/jobs/create">Proposer    </a>
                             
                         </div>
